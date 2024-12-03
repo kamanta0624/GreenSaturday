@@ -40,10 +40,11 @@ public class CandyManager : MonoBehaviour
 
         string ScoreLabel = "’PˆÊ :" + score;
 
-        GUI.Label(new Rect(50,50,100,30),label);
+        GUI.Label(new Rect(50,50,100,30), label);
 
         GUI.Label(new Rect(50, 30, 100, 20), ScoreLabel);
     }
+
     void Update()
     {
         if (candy < DefaultCandyAmount && counter <= 0)
@@ -51,6 +52,7 @@ public class CandyManager : MonoBehaviour
             StartCoroutine(RecoverCandy());
         }
     }
+
     IEnumerator RecoverCandy()
     {
         counter = RecoverySeconds;

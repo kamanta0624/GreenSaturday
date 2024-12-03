@@ -8,7 +8,6 @@ public class CandyDestroyer : MonoBehaviour
     public int reward;
     public int scorereward;
 
-
     void OnTriggerEnter(Collider other)
     {
       if (other.gameObject.tag == "Candy")
